@@ -1,0 +1,73 @@
+/* Full page background */
+.home {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* subtle glow layer */
+.overlay {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 70%);
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% { transform: translate(-25%, -25%); }
+  50% { transform: translate(-20%, -30%); }
+  100% { transform: translate(-25%, -25%); }
+}
+
+/* main content */
+.home-content {
+  text-align: center;
+  z-index: 1;
+}
+
+/* logo text */
+.logo {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* tagline */
+.tagline {
+  color: #aaa;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* buttons container */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* buttons */
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* hover glow */
+.btn:hover {
+  background: white;
+  color: black;
+  transform: translateY(-3px) scale(1.05);
+}

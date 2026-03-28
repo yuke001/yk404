@@ -1,0 +1,58 @@
+.video-page {
+  min-height: 100vh;
+  background: #0f0f0f; /* solid dark bg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* container */
+.video-container {
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* video player */
+.main-video {
+  width: 100%;
+  border-radius: 12px;
+  background: black;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* title */
+.video-title {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+
+.main-video:hover {
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 14px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+/* hover */
+.back-btn:hover {
+  background: white;
+  color: black;
+}

@@ -1,0 +1,87 @@
+.gallery-page {
+  min-height: 100vh;
+  background: #0f0f0f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px;
+}
+
+/* title */
+.gallery-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* 🧱 Masonry layout */
+.masonry {
+  column-count: 4;
+  column-gap: 15px;
+}
+
+@media (max-width: 900px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+/* images */
+.masonry img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover zoom */
+.masonry img:hover {
+  transform: scale(1.03);
+}
+
+/* 🔍 lightbox overlay */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* fullscreen image */
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 14px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+/* hover */
+.back-btn:hover {
+  background: white;
+  color: black;
+}
